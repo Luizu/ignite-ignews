@@ -27,7 +27,6 @@ export default function Posts({ posts }: PostsProps) {
 
       <main className={styles.container}>
         <div className={styles.posts}>
-
           {posts.map(post => (
             <Link key={post.slug} href={`/posts/${post.slug}`}>
               <a>
@@ -37,7 +36,6 @@ export default function Posts({ posts }: PostsProps) {
               </a>
             </Link>
           ))}
-
         </div>
       </main>
     </>
